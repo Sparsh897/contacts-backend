@@ -1,14 +1,14 @@
-const express =require("express");
-const router =express.Router();
-const {
+import express from "express";
+const router = express.Router();
+import {
     getContact,
     createContact,
     updateContact,
     deleteContact,
     getContacts,
-} =require ("../controllers/contactcontroller");
+} from "../controllers/contactcontroller.js";
 
 router.route("/").get(getContacts).post(createContact);
 router.route("/:id").put(updateContact).get(getContact).delete(deleteContact);
 
-module.exports=router;
+export default router;

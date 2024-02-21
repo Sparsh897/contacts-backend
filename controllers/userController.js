@@ -2,8 +2,8 @@
 //@route Get /api/users/register
 //@acess public
 
-const registerUser= asyncHandler(async, (req, res) => {
-    res.json({ message: "Register the user" });
-  });
+// const registerUser= asyncHandler(async, (req, res) => {
+//     res.json({ message: "Register the user" });
+//   });
 
-  module.exports={registerUser};
+//   module.exports={registerUser};

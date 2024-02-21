@@ -1,16 +1,16 @@
-const express = require("express");
-const { registerUser } = require("../controllers/userController");
-registerUser
-const router = express.Router();
+// import express from "express";
+// import { registerUser } from "../controllers/userController.js";
 
-router.post("/register");
+// const router = express.Router();
 
-router.post("/register", (req, res) => {
-  res.json({ message: "Login User" });
-});
+// router.post("/register", registerUser);
 
-router.get("/register", (req, res) => {
-  res.json({ message: "Current user" });
-});
+// router.post("/login", (req, res) => {
+//   res.json({ message: "Login User" });
+// });
 
-module.exports = router;
+// router.get("/current", (req, res) => {
+//   res.json({ message: "Current user" });
+// });
+
+// export default {router};
