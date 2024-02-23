@@ -1,16 +1,12 @@
-// import express from "express";
-// import { registerUser } from "../controllers/userController.js";
+import express from "express";
+import { currentUser, loginUser, registerUser } from "../controllers/userController.js";
 
-// const router = express.Router();
+const router = express.Router();
 
-// router.post("/register", registerUser);
+router.post("/register", registerUser);
 
-// router.post("/login", (req, res) => {
-//   res.json({ message: "Login User" });
-// });
+router.post("/login", loginUser);
 
-// router.get("/current", (req, res) => {
-//   res.json({ message: "Current user" });
-// });
+router.get("/current",currentUser);
 
-// export default {router};
+export default {router};
